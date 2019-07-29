@@ -1,0 +1,50 @@
+{
+  "name": "cdn-tools",
+  "version": "0.0.1",
+  "description": "fe cdn管理工具",
+  "main": "src/index.ts",
+  "bin": {
+    "cdn-tools-cli": "dist/cli/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:cli",
+    "build:cli": "tsc --project ./src/cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaoyonggege/cdn.git"
+  },
+  "keywords": [
+    "fe",
+    "cdn",
+    "node",
+    "typescript"
+  ],
+  "author": "gaoyonggege@github.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gaoyonggege/cdn/issues"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "homepage": "https://github.com/gaoyonggege/cdn#readme",
+  "devDependencies": {
+    "@types/ali-oss": "^6.0.3",
+    "@types/chalk": "^2.2.0",
+    "@types/glob": "^7.1.1",
+    "@types/node": "^11.11.4",
+    "@types/qiniu": "^7.0.1"
+  },
+  "dependencies": {
+    "ali-oss": "^6.1.0",
+    "chalk": "^2.4.2",
+    "directory-exists": "^2.0.1",
+    "glob": "^7.1.3",
+    "qiniu": "^7.2.1",
+    "typescript": "^3.4.5"
+  }
+}
